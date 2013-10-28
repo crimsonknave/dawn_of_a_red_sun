@@ -1,0 +1,143 @@
+/*#logo h1 a {*/
+/*background-image: url(https://omnichron.net/external/op/src/logo.png); }*/
+
+body {
+  background: url(https://i.minus.com/i2qg3AdMWbELI.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#content, #fancybox-outer {
+  background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
+  font-family: "Stardos Stencil";
+  color: #000;
+  .post-main, .post-section {
+    background: none;
+  }
+  table {
+    background: none;
+    border: none;
+    border-spacing: 0px;
+    tr:nth-of-type(even) {
+      background:none;
+    }
+    th {
+      border: none;
+    }
+    tr {
+      /*border-bottom: 1px solid black;*/
+      /*border-left: 0px solid black;*/
+      /*border-right: 0px solid black;*/
+      /*border-top: 0px solid black;*/
+    }
+    th {
+      background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
+      color: black;
+    }
+  }
+}
+
+textarea {
+  background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg);
+}
+
+/*#welcome-avatar {*/
+/*width: 60px;*/
+/*}*/
+
+
+a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
+  color: #4b0b0a !important;
+font-family: 'Rock Salt';
+}
+
+/*.tab-container {*/
+/*background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);*/
+/*}*/
+
+/* Old interface, probably don't care about for reforge*/
+/*.tabnav {*/
+  /*background: none;*/
+  /*height: 33px;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*width: 74%; */
+  /* Old interface, probably don't care about for reforge*/
+  /*li.adventure-log a:before {*/
+    /*content: "News";*/
+    /*font-size: 16px; */
+  /*}*/
+  /*li.adventure-log a {*/
+    /*font-size: 0px;*/
+  /*}*/
+  /*li.maps, li.items {*/
+    /*display: none;*/
+  /*}*/
+  /*a.active:hover, a:hover, a.active:visited, a.active:link {*/
+    /*background: none;*/
+    /*text-decoration: underline overline;*/
+    /*border: 0px;*/
+  /*}*/
+  /*a.active:before, a:before:hover {*/
+    /*background: none;*/
+    /*text-decoration: underline overline;*/
+    /*border: 0px;*/
+  /*}*/
+  /*a:link, a:visited {*/
+    /*color: black !important;*/
+    /*background: none;*/
+    /*border: none;*/
+    /*padding-top: 12px;*/
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
+    /*font-size: 16px;*/
+    /*font-family: "Stardos Stencil";*/
+  /*}*/
+/*}*/
+
+#secondary-column {
+  border-left: 2px solid black;
+  margin-left: 2px;
+  .sidebar {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    color: black;
+  }
+  .sidebar h4 {
+    color: black;
+    border-bottom: 1px solid black;
+  }
+  .sidebar p, .sidebar #authentication-form {
+    color: black;
+  }
+}
+
+.page-title:after {
+  content: "- Monday, September 9th, 1947";
+}
+
+.adventure-log-page .post-title {
+  width: 550px;
+}
+
+.dsf_avatar_image {
+  display: block;
+}
+
+.dsf_avatar_image:before {
+  content: ' ';
+  display: block;
+  position: relative;
+  left: 150px;
+  top: -12px;
+  height: 111px;
+  width: 110px;
+  background: url(https://i.minus.com/ibr7dma6qdUJcu.png);
+  background-size: 100% auto;
+  z-index: 20;
+  margin: -100px;
+  margin-top: -10px;
+}
+
