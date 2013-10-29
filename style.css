@@ -1,16 +1,18 @@
-/*#logo h1 a {*/
-/*background-image: url(https://omnichron.net/external/op/src/logo.png); }*/
-body {
-  background: url(https://i.minus.com/i2qg3AdMWbELI.jpg) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+.campaign-settings #style-settings textarea, .campaign-settings #style-settings textarea.flat-field {
+  color: black;
+  background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg); }
+.campaign-settings #style-settings #dark-section, .campaign-settings #style-settings .gray-back {
+  background: none; }
 
 #content, #fancybox-outer {
   background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
   font-family: "Stardos Stencil";
   color: #000; }
+  #content .adventure-log-post-container.teaser .post-column, #fancybox-outer .adventure-log-post-container.teaser .post-column {
+    background-image: url(http://upload.wikimedia.org/wikipedia/en/3/3b/3x5_Notecard.jpg);
+    background-size: cover; }
+    #content .adventure-log-post-container.teaser .post-column .title, #fancybox-outer .adventure-log-post-container.teaser .post-column .title {
+      border: 0px; }
   #content .post-main, #content .post-section, #fancybox-outer .post-main, #fancybox-outer .post-section {
     background: none; }
   #content table, #fancybox-outer table {
@@ -29,77 +31,34 @@ body {
     #content table th, #fancybox-outer table th {
       background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
       color: black; }
+  #content .main-content, #content #character-details, #content .adventure-log-post, #fancybox-outer .main-content, #fancybox-outer #character-details, #fancybox-outer .adventure-log-post {
+    background: none; }
+    #content .main-content .title, #content #character-details .title, #content .adventure-log-post .title, #fancybox-outer .main-content .title, #fancybox-outer #character-details .title, #fancybox-outer .adventure-log-post .title {
+      border-bottom: 1px solid black; }
+  #content textarea, #content textarea.flat-field, #fancybox-outer textarea, #fancybox-outer textarea.flat-field {
+    color: black;
+    background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg); }
 
-textarea {
-  background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg); }
-
-/*#welcome-avatar {*/
-/*width: 60px;*/
-/*}*/
 a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
   color: #4b0b0a !important;
   font-family: 'Rock Salt'; }
 
-/*.tab-container {*/
-/*background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);*/
-/*}*/
-/* Old interface, probably don't care about for reforge*/
-/*.tabnav {*/
-/*background: none;*/
-/*height: 33px;*/
-/*margin-left: auto;*/
-/*margin-right: auto;*/
-/*width: 74%; */
-/* Old interface, probably don't care about for reforge*/
-/*li.adventure-log a:before {*/
-/*content: "News";*/
-/*font-size: 16px; */
-/*}*/
-/*li.adventure-log a {*/
-/*font-size: 0px;*/
-/*}*/
-/*li.maps, li.items {*/
-/*display: none;*/
-/*}*/
-/*a.active:hover, a:hover, a.active:visited, a.active:link {*/
-/*background: none;*/
-/*text-decoration: underline overline;*/
-/*border: 0px;*/
-/*}*/
-/*a.active:before, a:before:hover {*/
-/*background: none;*/
-/*text-decoration: underline overline;*/
-/*border: 0px;*/
-/*}*/
-/*a:link, a:visited {*/
-/*color: black !important;*/
-/*background: none;*/
-/*border: none;*/
-/*padding-top: 12px;*/
-/*padding-left: 5px;*/
-/*padding-right: 5px;*/
-/*font-size: 16px;*/
-/*font-family: "Stardos Stencil";*/
-/*}*/
-/*}*/
-#secondary-column {
-  border-left: 2px solid black;
-  margin-left: 2px; }
-  #secondary-column .sidebar {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px;
-    color: black; }
-  #secondary-column .sidebar h4 {
+#sidebar.sidebar {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  margin-left: 0px;
+  padding-top: 5px;
+  color: black; }
+  #sidebar.sidebar div {
+    border-top: 0px; }
+  #sidebar.sidebar h4 {
     color: black;
     border-bottom: 1px solid black; }
-  #secondary-column .sidebar p, #secondary-column .sidebar #authentication-form {
+  #sidebar.sidebar p {
     color: black; }
 
 .page-title:after {
   content: "- Monday, September 9th, 1947"; }
-
-.adventure-log-page .post-title {
-  width: 550px; }
 
 .dsf_avatar_image {
   display: block; }
