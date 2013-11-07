@@ -1,3 +1,29 @@
+$dark-red: #4b0b0a ;
+
+@mixin pin($top: 0px, $left: 0px) {
+  &:before {
+    content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+    position: relative;
+    top: $top;
+    left: $left;
+  }
+}
+@mixin rotate($degrees) {
+  transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+}
+
+@mixin handwritten($important: false, $size: false) {
+  @if $size { font-size: $size; }
+  @if $important {
+    color: $dark-red !important;
+  } @else {
+    color: $dark-red;
+  }
+  font-family: 'Rock Salt';
+}
+
 .campaign-settings {
   #style-settings {
     textarea, textarea.flat-field {
@@ -9,14 +35,80 @@
     }
   }
 }
+.adventure-log-index {
+  #campaign-nav {
+    background-color: rgba(155,105,85,0.8);
+  }
+  #content {
+    background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg);
+  }
+}
 #content, #fancybox-outer {
+  .adventure-log-new-container {
+    background: none;
+    margin-bottom: -15px;
+  }
+  .adventure-log-post-container.teaser:nth-of-type(odd) {
+    @include rotate(-2deg);
+    .post-column {
+      @include pin(-17px, 340px); 
+    }
+  }
+  .adventure-log-post-container.teaser:nth-of-type(even) {
+    @include rotate(2deg);
+    .post-column {
+      @include pin(-17px, 190px); 
+    }
+  }
   .adventure-log-post-container.teaser {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 5px 10px 15px black;
+    background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
+    background-size: cover;
     .post-column {
       .title {
         border: 0px;
+        font-size: 20px;
+        margin-top: -3px;
       }
-      background-image: url(http://upload.wikimedia.org/wikipedia/en/3/3b/3x5_Notecard.jpg);
-      background-size: cover;
+      .post-content {
+        height: 190px;
+        p {
+          line-height: 20px;
+          padding-bottom: 3px;
+        }
+      }
+      .post-view-link {
+        display:none;
+      }
+      width: 100%;
+      .post-header {
+        margin-top: -57px;
+        .tags {
+          margin-top: -5px;
+          margin-bottom: -4px;
+        }
+      }
+      .header-icon {
+        margin-top: -50px;
+      }
+      .overflow-fade-out {
+        display:none
+      }
+    }
+    .post-date {
+      @include handwritten();
+      background: none;
+      margin-left: -200px;
+      margin-top: -12px;
+      height: 100px;
+      .day {
+        padding-bottom: 13px;
+      }
     }
   }
 
@@ -60,8 +152,7 @@
 }
 
 a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
-  color: #4b0b0a !important;
-font-family: 'Rock Salt';
+  @include handwritten(true);
 }
 
 

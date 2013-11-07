@@ -4,15 +4,76 @@
 .campaign-settings #style-settings #dark-section, .campaign-settings #style-settings .gray-back {
   background: none; }
 
+.adventure-log-index #campaign-nav {
+  background-color: rgba(155, 105, 85, 0.8); }
+.adventure-log-index #content {
+  background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg); }
+
 #content, #fancybox-outer {
   background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
   font-family: "Stardos Stencil";
   color: #000; }
-  #content .adventure-log-post-container.teaser .post-column, #fancybox-outer .adventure-log-post-container.teaser .post-column {
-    background-image: url(http://upload.wikimedia.org/wikipedia/en/3/3b/3x5_Notecard.jpg);
+  #content .adventure-log-new-container, #fancybox-outer .adventure-log-new-container {
+    background: none;
+    margin-bottom: -15px; }
+  #content .adventure-log-post-container.teaser:nth-of-type(odd), #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(odd) {
+    transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg); }
+    #content .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before, #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before {
+      content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+      position: relative;
+      top: -17px;
+      left: 340px; }
+  #content .adventure-log-post-container.teaser:nth-of-type(even), #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) {
+    transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg); }
+    #content .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before, #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before {
+      content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
+      position: relative;
+      top: -17px;
+      left: 190px; }
+  #content .adventure-log-post-container.teaser, #fancybox-outer .adventure-log-post-container.teaser {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-shadow: 5px 10px 15px black;
+    background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
     background-size: cover; }
-    #content .adventure-log-post-container.teaser .post-column .title, #fancybox-outer .adventure-log-post-container.teaser .post-column .title {
-      border: 0px; }
+    #content .adventure-log-post-container.teaser .post-column, #fancybox-outer .adventure-log-post-container.teaser .post-column {
+      width: 100%; }
+      #content .adventure-log-post-container.teaser .post-column .title, #fancybox-outer .adventure-log-post-container.teaser .post-column .title {
+        border: 0px;
+        font-size: 20px;
+        margin-top: -3px; }
+      #content .adventure-log-post-container.teaser .post-column .post-content, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-content {
+        height: 190px; }
+        #content .adventure-log-post-container.teaser .post-column .post-content p, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-content p {
+          line-height: 20px;
+          padding-bottom: 3px; }
+      #content .adventure-log-post-container.teaser .post-column .post-view-link, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-view-link {
+        display: none; }
+      #content .adventure-log-post-container.teaser .post-column .post-header, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-header {
+        margin-top: -57px; }
+        #content .adventure-log-post-container.teaser .post-column .post-header .tags, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-header .tags {
+          margin-top: -5px;
+          margin-bottom: -4px; }
+      #content .adventure-log-post-container.teaser .post-column .header-icon, #fancybox-outer .adventure-log-post-container.teaser .post-column .header-icon {
+        margin-top: -50px; }
+      #content .adventure-log-post-container.teaser .post-column .overflow-fade-out, #fancybox-outer .adventure-log-post-container.teaser .post-column .overflow-fade-out {
+        display: none; }
+    #content .adventure-log-post-container.teaser .post-date, #fancybox-outer .adventure-log-post-container.teaser .post-date {
+      color: #4b0b0a;
+      font-family: 'Rock Salt';
+      background: none;
+      margin-left: -200px;
+      margin-top: -12px;
+      height: 100px; }
+      #content .adventure-log-post-container.teaser .post-date .day, #fancybox-outer .adventure-log-post-container.teaser .post-date .day {
+        padding-bottom: 13px; }
   #content .post-main, #content .post-section, #fancybox-outer .post-main, #fancybox-outer .post-section {
     background: none; }
   #content table, #fancybox-outer table {
