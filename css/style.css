@@ -137,3 +137,6 @@ a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.
   z-index: 20;
   margin: -100px;
   margin-top: -10px; }
+
+.dynamic_sheet_container {
+  overflow: hidden; }
