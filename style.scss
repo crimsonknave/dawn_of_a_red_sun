@@ -1,5 +1,24 @@
 $dark-red: #4b0b0a ;
 
+@mixin brown_paper {
+  background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
+}
+@mixin grey_paper {
+  background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg);
+}
+@mixin cork_board {
+  background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg);
+}
+
+@mixin newspaper_divider {
+  border: none;
+  background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
+}
+@mixin fonts {
+  font-family: "Stardos Stencil";
+  color: #000;
+}
+
 @mixin pin($top: 0px, $left: 0px) {
   &:before {
     content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
@@ -24,11 +43,15 @@ $dark-red: #4b0b0a ;
   font-family: 'Rock Salt';
 }
 
+body {
+  @include fonts;
+}
+
 .campaign-settings {
   #style-settings {
     textarea, textarea.flat-field {
-      color: black;
-      background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg);
+      @include fonts;
+      @include grey_paper;
     }
     #dark-section, .gray-back {
       background: none;
@@ -40,114 +63,164 @@ $dark-red: #4b0b0a ;
     background-color: rgba(155,105,85,0.8);
   }
   #content {
-    background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg);
+    @include cork_board
   }
 }
-#content, #fancybox-outer {
-  .adventure-log-new-container {
-    background: none;
-    margin-bottom: -15px;
+.campaign-public-layout {
+  .reveal-modal {
+    @include brown_paper;
   }
-  .adventure-log-post-container.teaser:nth-of-type(odd) {
-    @include rotate(-2deg);
-    .post-column {
-      @include pin(-17px, 340px); 
-    }
-  }
-  .adventure-log-post-container.teaser:nth-of-type(even) {
-    @include rotate(2deg);
-    .post-column {
-      @include pin(-17px, 190px); 
-    }
-  }
-  .adventure-log-post-container.teaser {
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    box-shadow: 5px 10px 15px black;
-    background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
-    background-size: cover;
-    .post-column {
-      .title {
-        border: 0px;
-        font-size: 20px;
-        margin-top: -3px;
+  #content, #fancybox-outer {
+    @include brown_paper;
+    @include fonts;
+    .main-content {
+      @include fonts;
+      h1, h2, h3, h4, h5, h6 {
+        @include fonts;
       }
-      .post-content {
-        height: 190px;
-        p {
-          line-height: 20px;
-          padding-bottom: 3px;
-        }
-      }
-      .post-view-link {
-        display:none;
-      }
-      width: 100%;
-      .post-header {
-        margin-top: -57px;
-        .tags {
-          margin-top: -5px;
-          margin-bottom: -4px;
-        }
-      }
-      .header-icon {
-        margin-top: -50px;
-      }
-      .overflow-fade-out {
-        display:none
+      .title-edit {
+        border: none;
+        margin-bottom: 5px;
       }
     }
-    .post-date {
-      @include handwritten();
-      background: none;
-      margin-left: -200px;
-      margin-top: -12px;
-      height: 100px;
-      .day {
-        padding-bottom: 13px;
-      }
+    .highlight-container {
+      display: none;
     }
-  }
 
-  background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
-  font-family: "Stardos Stencil";
-  color: #000;
-  .post-main, .post-section {
-    background: none;
-  }
-  table {
-    background: none;
-    border: none;
-    border-spacing: 0px;
-    tr:nth-of-type(even) {
-      background:none;
+    .main-section {
+      background: none;
+      padding-top: 0px;
     }
-    th {
+    .post-main {
+      padding-top: 0px;
+    }
+    hr {
+      @include newspaper_divider;
+      height: 6px;
+    }
+
+    .post-gm-only {
+      .gm-only-header.title {
+        // Normally wouldn't use important, but they did, so nuts to them
+        border-bottom-color: black !important;
+      }
+    }
+
+
+    #campaign-summary-row {
+      .large-12.columns {
+        .row {
+          display: none;
+        }
+        #banner-container {
+          margin-bottom: 20px;
+          padding-top: 15px;
+        }
+      }
+    }
+    .adventure-log-new-container {
+      background: none;
+      margin-bottom: -15px;
+    }
+    .adventure-log-post-container.teaser:nth-of-type(odd) {
+      @include rotate(-2deg);
+      .post-column {
+        @include pin(-17px, 340px); 
+      }
+    }
+    .adventure-log-post-container.teaser:nth-of-type(even) {
+      @include rotate(2deg);
+      .post-column {
+        @include pin(-17px, 190px); 
+      }
+    }
+    .adventure-log-post-container.teaser {
+      padding: 0px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+      margin-right: 0px;
+      box-shadow: 5px 10px 15px black;
+      background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
+      background-size: cover;
+      .post-column {
+        .title {
+          border: 0px;
+          font-size: 20px;
+          margin-top: -3px;
+        }
+        .post-content {
+          height: 190px;
+          p {
+            line-height: 20px;
+            padding-bottom: 3px;
+          }
+        }
+        .post-view-link {
+          display:none;
+        }
+        width: 100%;
+        .post-header {
+          margin-top: -57px;
+          .tags {
+            margin-top: -5px;
+            margin-bottom: -4px;
+          }
+        }
+        .header-icon {
+          margin-top: -50px;
+        }
+        .overflow-fade-out {
+          display:none
+        }
+      }
+      .post-date {
+        @include handwritten();
+        background: none;
+        margin-left: -200px;
+        margin-top: -12px;
+        height: 100px;
+        .day {
+          padding-bottom: 13px;
+        }
+      }
+    }
+
+    .main-content-container {
+      padding-left: 50px;
+    }
+    .post-main, .post-section {
+      background: none;
+      padding-right: 0px;
+    }
+    table {
+      background: none;
       border: none;
+      border-spacing: 0px;
+      tr:nth-of-type(even) {
+        background:none;
+      }
+      tr {
+        th {
+          @include newspaper_divider;
+          @include fonts;
+        }
+        td {
+          @include fonts;
+        }
+      }
     }
-    tr {
-      /*border-bottom: 1px solid black;*/
-      /*border-left: 0px solid black;*/
-      /*border-right: 0px solid black;*/
-      /*border-top: 0px solid black;*/
-    }
-    th {
-      background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
-      color: black;
-    }
-  }
- .main-content, #character-details, .adventure-log-post {
-   background: none;
-   .title {
-     border-bottom: 1px solid black;
+   .main-content, #character-details, .adventure-log-post {
+     @include fonts;
+     background: none;
+     .title {
+       border-bottom: 1px solid black;
+     }
    }
- }
-  textarea, textarea.flat-field {
-    color: black;
-    background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg);
+    textarea, textarea.flat-field {
+      @include fonts;
+      @include grey_paper;
+    }
   }
 }
 

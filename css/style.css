@@ -1,5 +1,10 @@
+body {
+  font-family: "Stardos Stencil";
+  color: #000; }
+
 .campaign-settings #style-settings textarea, .campaign-settings #style-settings textarea.flat-field {
-  color: black;
+  font-family: "Stardos Stencil";
+  color: #000;
   background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg); }
 .campaign-settings #style-settings #dark-section, .campaign-settings #style-settings .gray-back {
   background: none; }
@@ -9,32 +14,61 @@
 .adventure-log-index #content {
   background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg); }
 
-#content, #fancybox-outer {
+.campaign-public-layout .reveal-modal {
+  background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg); }
+.campaign-public-layout #content, .campaign-public-layout #fancybox-outer {
   background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg);
   font-family: "Stardos Stencil";
   color: #000; }
-  #content .adventure-log-new-container, #fancybox-outer .adventure-log-new-container {
+  .campaign-public-layout #content .main-content, .campaign-public-layout #fancybox-outer .main-content {
+    font-family: "Stardos Stencil";
+    color: #000; }
+    .campaign-public-layout #content .main-content h1, .campaign-public-layout #content .main-content h2, .campaign-public-layout #content .main-content h3, .campaign-public-layout #content .main-content h4, .campaign-public-layout #content .main-content h5, .campaign-public-layout #content .main-content h6, .campaign-public-layout #fancybox-outer .main-content h1, .campaign-public-layout #fancybox-outer .main-content h2, .campaign-public-layout #fancybox-outer .main-content h3, .campaign-public-layout #fancybox-outer .main-content h4, .campaign-public-layout #fancybox-outer .main-content h5, .campaign-public-layout #fancybox-outer .main-content h6 {
+      font-family: "Stardos Stencil";
+      color: #000; }
+    .campaign-public-layout #content .main-content .title-edit, .campaign-public-layout #fancybox-outer .main-content .title-edit {
+      border: none;
+      margin-bottom: 5px; }
+  .campaign-public-layout #content .highlight-container, .campaign-public-layout #fancybox-outer .highlight-container {
+    display: none; }
+  .campaign-public-layout #content .main-section, .campaign-public-layout #fancybox-outer .main-section {
+    background: none;
+    padding-top: 0px; }
+  .campaign-public-layout #content .post-main, .campaign-public-layout #fancybox-outer .post-main {
+    padding-top: 0px; }
+  .campaign-public-layout #content hr, .campaign-public-layout #fancybox-outer hr {
+    border: none;
+    background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
+    height: 6px; }
+  .campaign-public-layout #content .post-gm-only .gm-only-header.title, .campaign-public-layout #fancybox-outer .post-gm-only .gm-only-header.title {
+    border-bottom-color: black !important; }
+  .campaign-public-layout #content #campaign-summary-row .large-12.columns .row, .campaign-public-layout #fancybox-outer #campaign-summary-row .large-12.columns .row {
+    display: none; }
+  .campaign-public-layout #content #campaign-summary-row .large-12.columns #banner-container, .campaign-public-layout #fancybox-outer #campaign-summary-row .large-12.columns #banner-container {
+    margin-bottom: 20px;
+    padding-top: 15px; }
+  .campaign-public-layout #content .adventure-log-new-container, .campaign-public-layout #fancybox-outer .adventure-log-new-container {
     background: none;
     margin-bottom: -15px; }
-  #content .adventure-log-post-container.teaser:nth-of-type(odd), #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(odd) {
+  .campaign-public-layout #content .adventure-log-post-container.teaser:nth-of-type(odd), .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(odd) {
     transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg); }
-    #content .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before, #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before {
+    .campaign-public-layout #content .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(odd) .post-column:before {
       content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
       position: relative;
       top: -17px;
       left: 340px; }
-  #content .adventure-log-post-container.teaser:nth-of-type(even), #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) {
+  .campaign-public-layout #content .adventure-log-post-container.teaser:nth-of-type(even), .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) {
     transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     -webkit-transform: rotate(2deg); }
-    #content .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before, #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before {
+    .campaign-public-layout #content .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) .post-column:before {
       content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
       position: relative;
       top: -17px;
       left: 190px; }
-  #content .adventure-log-post-container.teaser, #fancybox-outer .adventure-log-post-container.teaser {
+  .campaign-public-layout #content .adventure-log-post-container.teaser, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser {
     padding: 0px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -43,61 +77,65 @@
     box-shadow: 5px 10px 15px black;
     background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
     background-size: cover; }
-    #content .adventure-log-post-container.teaser .post-column, #fancybox-outer .adventure-log-post-container.teaser .post-column {
+    .campaign-public-layout #content .adventure-log-post-container.teaser .post-column, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column {
       width: 100%; }
-      #content .adventure-log-post-container.teaser .post-column .title, #fancybox-outer .adventure-log-post-container.teaser .post-column .title {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .title, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .title {
         border: 0px;
         font-size: 20px;
         margin-top: -3px; }
-      #content .adventure-log-post-container.teaser .post-column .post-content, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-content {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .post-content, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .post-content {
         height: 190px; }
-        #content .adventure-log-post-container.teaser .post-column .post-content p, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-content p {
+        .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .post-content p, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .post-content p {
           line-height: 20px;
           padding-bottom: 3px; }
-      #content .adventure-log-post-container.teaser .post-column .post-view-link, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-view-link {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .post-view-link, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .post-view-link {
         display: none; }
-      #content .adventure-log-post-container.teaser .post-column .post-header, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-header {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .post-header, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .post-header {
         margin-top: -57px; }
-        #content .adventure-log-post-container.teaser .post-column .post-header .tags, #fancybox-outer .adventure-log-post-container.teaser .post-column .post-header .tags {
+        .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .post-header .tags, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .post-header .tags {
           margin-top: -5px;
           margin-bottom: -4px; }
-      #content .adventure-log-post-container.teaser .post-column .header-icon, #fancybox-outer .adventure-log-post-container.teaser .post-column .header-icon {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .header-icon, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .header-icon {
         margin-top: -50px; }
-      #content .adventure-log-post-container.teaser .post-column .overflow-fade-out, #fancybox-outer .adventure-log-post-container.teaser .post-column .overflow-fade-out {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-column .overflow-fade-out, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-column .overflow-fade-out {
         display: none; }
-    #content .adventure-log-post-container.teaser .post-date, #fancybox-outer .adventure-log-post-container.teaser .post-date {
+    .campaign-public-layout #content .adventure-log-post-container.teaser .post-date, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-date {
       color: #4b0b0a;
       font-family: 'Rock Salt';
       background: none;
       margin-left: -200px;
       margin-top: -12px;
       height: 100px; }
-      #content .adventure-log-post-container.teaser .post-date .day, #fancybox-outer .adventure-log-post-container.teaser .post-date .day {
+      .campaign-public-layout #content .adventure-log-post-container.teaser .post-date .day, .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser .post-date .day {
         padding-bottom: 13px; }
-  #content .post-main, #content .post-section, #fancybox-outer .post-main, #fancybox-outer .post-section {
-    background: none; }
-  #content table, #fancybox-outer table {
+  .campaign-public-layout #content .main-content-container, .campaign-public-layout #fancybox-outer .main-content-container {
+    padding-left: 50px; }
+  .campaign-public-layout #content .post-main, .campaign-public-layout #content .post-section, .campaign-public-layout #fancybox-outer .post-main, .campaign-public-layout #fancybox-outer .post-section {
+    background: none;
+    padding-right: 0px; }
+  .campaign-public-layout #content table, .campaign-public-layout #fancybox-outer table {
     background: none;
     border: none;
     border-spacing: 0px; }
-    #content table tr:nth-of-type(even), #fancybox-outer table tr:nth-of-type(even) {
+    .campaign-public-layout #content table tr:nth-of-type(even), .campaign-public-layout #fancybox-outer table tr:nth-of-type(even) {
       background: none; }
-    #content table th, #fancybox-outer table th {
-      border: none; }
-    #content table tr, #fancybox-outer table tr {
-      /*border-bottom: 1px solid black;*/
-      /*border-left: 0px solid black;*/
-      /*border-right: 0px solid black;*/
-      /*border-top: 0px solid black;*/ }
-    #content table th, #fancybox-outer table th {
+    .campaign-public-layout #content table tr th, .campaign-public-layout #fancybox-outer table tr th {
+      border: none;
       background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
-      color: black; }
-  #content .main-content, #content #character-details, #content .adventure-log-post, #fancybox-outer .main-content, #fancybox-outer #character-details, #fancybox-outer .adventure-log-post {
+      font-family: "Stardos Stencil";
+      color: #000; }
+    .campaign-public-layout #content table tr td, .campaign-public-layout #fancybox-outer table tr td {
+      font-family: "Stardos Stencil";
+      color: #000; }
+  .campaign-public-layout #content .main-content, .campaign-public-layout #content #character-details, .campaign-public-layout #content .adventure-log-post, .campaign-public-layout #fancybox-outer .main-content, .campaign-public-layout #fancybox-outer #character-details, .campaign-public-layout #fancybox-outer .adventure-log-post {
+    font-family: "Stardos Stencil";
+    color: #000;
     background: none; }
-    #content .main-content .title, #content #character-details .title, #content .adventure-log-post .title, #fancybox-outer .main-content .title, #fancybox-outer #character-details .title, #fancybox-outer .adventure-log-post .title {
+    .campaign-public-layout #content .main-content .title, .campaign-public-layout #content #character-details .title, .campaign-public-layout #content .adventure-log-post .title, .campaign-public-layout #fancybox-outer .main-content .title, .campaign-public-layout #fancybox-outer #character-details .title, .campaign-public-layout #fancybox-outer .adventure-log-post .title {
       border-bottom: 1px solid black; }
-  #content textarea, #content textarea.flat-field, #fancybox-outer textarea, #fancybox-outer textarea.flat-field {
-    color: black;
+  .campaign-public-layout #content textarea, .campaign-public-layout #content textarea.flat-field, .campaign-public-layout #fancybox-outer textarea, .campaign-public-layout #fancybox-outer textarea.flat-field {
+    font-family: "Stardos Stencil";
+    color: #000;
     background: url(https://fc06.deviantart.net/fs11/i/2006/220/d/2/Grungy_paper_v_6___or_sumtin___by_bashcorpo.jpg); }
 
 a, a.tag-link:visited, a.character_link:visited, a.wiki-content-link:visited, a.wiki-page-link:visited, a:visited {
