@@ -105,6 +105,9 @@ body {
         border-bottom-color: black !important;
       }
     }
+    .tags-list {
+      color: black;
+    }
 
 
     #campaign-summary-row {
@@ -134,54 +137,59 @@ body {
         @include pin(-17px, 190px); 
       }
     }
-    .adventure-log-post-container.teaser {
-      padding: 0px;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      margin-left: 0px;
-      margin-right: 0px;
-      box-shadow: 5px 10px 15px black;
-      background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
-      background-size: cover;
-      .post-column {
-        .title {
-          border: 0px;
-          font-size: 20px;
-          margin-top: -3px;
-        }
-        .post-content {
-          height: 190px;
-          p {
-            line-height: 20px;
-            padding-bottom: 3px;
-          }
-        }
-        .post-view-link {
-          display:none;
-        }
-        width: 100%;
-        .post-header {
-          margin-top: -57px;
-          .tags {
-            margin-top: -5px;
-            margin-bottom: -4px;
-          }
-        }
-        .header-icon {
-          margin-top: -50px;
-        }
-        .overflow-fade-out {
-          display:none
-        }
-      }
-      .post-date {
-        @include handwritten();
+    .adventure-log-post-container {
+      .post-header-container {
         background: none;
-        margin-left: -200px;
-        margin-top: -12px;
-        height: 100px;
-        .day {
-          padding-bottom: 13px;
+      }
+      .teaser {
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-shadow: 5px 10px 15px black;
+        background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
+        background-size: cover;
+        .post-column {
+          .title {
+            border: 0px;
+            font-size: 20px;
+            margin-top: -3px;
+          }
+          .post-content {
+            height: 190px;
+            p {
+              line-height: 20px;
+              padding-bottom: 3px;
+            }
+          }
+          .post-view-link {
+            display:none;
+          }
+          width: 100%;
+          .post-header {
+            margin-top: -57px;
+            .tags {
+              margin-top: -5px;
+              margin-bottom: -4px;
+            }
+          }
+          .header-icon {
+            margin-top: -50px;
+          }
+          .overflow-fade-out {
+            display:none
+          }
+        }
+        .post-date {
+          @include handwritten();
+          background: none;
+          margin-left: -200px;
+          margin-top: -12px;
+          height: 100px;
+          .day {
+            padding-bottom: 13px;
+          }
         }
       }
     }
