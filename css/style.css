@@ -9,10 +9,12 @@ body {
 .campaign-settings #style-settings #dark-section, .campaign-settings #style-settings .gray-back {
   background: none; }
 
-.adventure-log-index #campaign-nav {
+.campaign-public-layout.adventure-log-index #campaign-nav {
   background-color: rgba(155, 105, 85, 0.8); }
-.adventure-log-index #content {
+.campaign-public-layout.adventure-log-index #content {
   background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg); }
+  .campaign-public-layout.adventure-log-index #content .main-content {
+    padding-left: 20px; }
 
 .campaign-public-layout .reveal-modal {
   background: url(https://fc03.deviantart.net/fs7/i/2005/258/c/4/Paper_texture_v5_by_bashcorpo.jpg); }
@@ -60,7 +62,7 @@ body {
       content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
       position: relative;
       top: -17px;
-      left: 340px; }
+      left: 60%; }
   .campaign-public-layout #content .adventure-log-post-container.teaser:nth-of-type(even), .campaign-public-layout #fancybox-outer .adventure-log-post-container.teaser:nth-of-type(even) {
     transform: rotate(2deg);
     -ms-transform: rotate(2deg);
@@ -69,49 +71,49 @@ body {
       content: url(http://i.minus.com/ib15ixRfsZj5mz.png);
       position: relative;
       top: -17px;
-      left: 190px; }
-  .campaign-public-layout #content .adventure-log-post-container .post-header-container, .campaign-public-layout #fancybox-outer .adventure-log-post-container .post-header-container {
-    background: none; }
-  .campaign-public-layout #content .adventure-log-post-container .teaser, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser {
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    box-shadow: 5px 10px 15px black;
-    background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
-    background-size: cover; }
-    .campaign-public-layout #content .adventure-log-post-container .teaser .post-column, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column {
-      width: 100%; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .title, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .title {
-        border: 0px;
-        font-size: 20px;
-        margin-top: -3px; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .post-content, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .post-content {
-        height: 190px; }
-        .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .post-content p, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .post-content p {
-          line-height: 20px;
-          padding-bottom: 3px; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .post-view-link, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .post-view-link {
-        display: none; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .post-header, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .post-header {
-        margin-top: -57px; }
-        .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .post-header .tags, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .post-header .tags {
-          margin-top: -5px;
-          margin-bottom: -4px; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .header-icon, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .header-icon {
-        margin-top: -50px; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-column .overflow-fade-out, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-column .overflow-fade-out {
-        display: none; }
-    .campaign-public-layout #content .adventure-log-post-container .teaser .post-date, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-date {
-      color: #4b0b0a;
-      font-family: 'Rock Salt';
-      background: none;
-      margin-left: -200px;
-      margin-top: -12px;
-      height: 100px; }
-      .campaign-public-layout #content .adventure-log-post-container .teaser .post-date .day, .campaign-public-layout #fancybox-outer .adventure-log-post-container .teaser .post-date .day {
-        padding-bottom: 13px; }
+      left: 30%; }
+  .campaign-public-layout #content .adventure-log-post-container, .campaign-public-layout #fancybox-outer .adventure-log-post-container {
+    background: none;
+    padding: 0px; }
+    .campaign-public-layout #content .adventure-log-post-container .adventure-log-post, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-left: 0px;
+      margin-right: 0px;
+      box-shadow: 5px 10px 15px black;
+      background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
+      background-size: cover; }
+      .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column {
+        width: 100%; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .title, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .title {
+          border: 0px;
+          font-size: 20px;
+          margin-top: -3px; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .post-content, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .post-content {
+          height: 190px; }
+          .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .post-content p, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .post-content p {
+            line-height: 20px;
+            padding-bottom: 3px; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .post-view-link, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .post-view-link {
+          display: none; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .post-header, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .post-header {
+          margin-top: -57px; }
+          .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .post-header .tags, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .post-header .tags {
+            margin-top: -5px;
+            margin-bottom: -4px; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .header-icon, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .header-icon {
+          margin-top: -50px; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-column .overflow-fade-out, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-column .overflow-fade-out {
+          display: none; }
+      .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-date, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-date {
+        color: #4b0b0a;
+        font-family: 'Rock Salt';
+        background: none;
+        margin-left: -200px;
+        margin-top: -12px;
+        height: 100px; }
+        .campaign-public-layout #content .adventure-log-post-container .adventure-log-post .post-date .day, .campaign-public-layout #fancybox-outer .adventure-log-post-container .adventure-log-post .post-date .day {
+          padding-bottom: 13px; }
   .campaign-public-layout #content .main-content-container, .campaign-public-layout #fancybox-outer .main-content-container {
     padding-left: 50px; }
   .campaign-public-layout #content .post-main, .campaign-public-layout #content .post-section, .campaign-public-layout #fancybox-outer .post-main, .campaign-public-layout #fancybox-outer .post-section {

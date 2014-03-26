@@ -58,12 +58,15 @@ body {
     }
   }
 }
-.adventure-log-index {
+.campaign-public-layout.adventure-log-index {
   #campaign-nav {
     background-color: rgba(155,105,85,0.8);
   }
   #content {
-    @include cork_board
+    @include cork_board;
+    .main-content { 
+      padding-left: 20px;
+    }
   }
 }
 .campaign-public-layout {
@@ -125,24 +128,23 @@ body {
       background: none;
       margin-bottom: -15px;
     }
+    // Not sure why 60% and 30% match up, but they do...
     .adventure-log-post-container.teaser:nth-of-type(odd) {
       @include rotate(-2deg);
       .post-column {
-        @include pin(-17px, 340px); 
+        @include pin(-17px, 60%); 
       }
     }
     .adventure-log-post-container.teaser:nth-of-type(even) {
       @include rotate(2deg);
       .post-column {
-        @include pin(-17px, 190px); 
+        @include pin(-17px, 30%); 
       }
     }
     .adventure-log-post-container {
-      .post-header-container {
-        background: none;
-      }
-      .teaser {
-        padding: 0px;
+      background: none;
+      padding: 0px;
+      .adventure-log-post {
         margin-top: 10px;
         margin-bottom: 30px;
         margin-left: 0px;
