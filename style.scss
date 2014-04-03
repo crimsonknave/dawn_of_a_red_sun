@@ -10,6 +10,12 @@ $dark-red: #4b0b0a ;
   background-image: url(https://fc00.deviantart.net/fs15/f/2007/059/1/9/Corkboard_Wood_Cork_Composite_by_Enchantedgal_Stock.jpg);
 }
 
+@mixin notecard {
+  box-shadow: 5px 10px 15px black;
+  background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
+  background-size: cover;
+}
+
 @mixin newspaper_divider {
   border: none;
   background: url(https://i.minus.com/ibaMgqXr2ogTlu.png);
@@ -141,7 +147,7 @@ body {
         @include pin(-17px, 30%); 
       }
     }
-    .adventure-log-post-container {
+    .adventure-log-post-container.teaser {
       background: none;
       padding: 0px;
       .adventure-log-post {
@@ -149,9 +155,7 @@ body {
         margin-bottom: 30px;
         margin-left: 0px;
         margin-right: 0px;
-        box-shadow: 5px 10px 15px black;
-        background-image: url(http://i.minus.com/iUwiso5R9j13n.jpg);
-        background-size: cover;
+        @include notecard;
         .post-column {
           .title {
             border: 0px;
@@ -183,14 +187,26 @@ body {
             display:none
           }
         }
+      }
+    }
+    .adventure-log-post-container.full {
+      .adventure-log-post {
+        background: none;
+        .post-header-container {
+          background: none;
+          margin-top: -25px;
+        }
         .post-date {
           @include handwritten();
           background: none;
-          margin-left: -200px;
-          margin-top: -12px;
+          margin-top: 15px;
           height: 100px;
           .day {
             padding-bottom: 13px;
+            font-size: 35px;
+          }
+          .month-year {
+            font-size: 15px;
           }
         }
       }
